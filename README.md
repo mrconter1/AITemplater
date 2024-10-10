@@ -2,6 +2,10 @@
 
 AITemplater is a web application designed to streamline the process of creating templates for multiple, similar tasks in GPT-based AI services like ChatGPT or Claude. It provides an intuitive interface for organizing reference examples, important information, and instructions, which can then be compiled into a reusable prompt template.
 
+## Overview
+
+*AITemplater interface showing example management, info bits, and instruction input.*
+
 ## Features
 
 - **Example Management**: Add and edit multiple reference examples to guide AI responses for similar tasks.
