@@ -4,6 +4,8 @@ AITemplater is a web application designed to streamline the process of creating 
 
 ## Overview
 
+![image](https://github.com/user-attachments/assets/ce8eb1e3-55da-48a9-9a0d-1e631f86075c)
+
 *AITemplater interface showing example management, info bits, and instruction input.*
 
 ## Features
