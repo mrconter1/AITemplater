@@ -9,8 +9,14 @@ export default function Home() {
   const [infoBits, setInfoBits] = useState([])
   const [instruction, setInstruction] = useState('')
 
-  const addExample = (text) => {
-    setExamples([...examples, text])
+  const addExample = (text, index = null) => {
+    if (index !== null) {
+      // Update existing example
+      setExamples(prev => prev.map((ex, i) => i === index ? text : ex))
+    } else {
+      // Add new example
+      setExamples(prev => [...prev, text])
+    }
   }
 
   const addInfoBit = () => {
