@@ -30,16 +30,19 @@ export default function ExamplesSection({ examples, addExample }) {
                 value={example}
                 onChange={(e) => handleEdit(index, e.target.value)}
                 onBlur={() => setEditingIndex(null)}
-                className="w-full p-2 bg-gray-600 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                rows="3"
+                className="w-full p-2 bg-gray-600 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500 h-32 resize-none"
                 autoFocus
               />
             ) : (
               <div 
                 onClick={() => setEditingIndex(index)}
-                className="cursor-pointer whitespace-pre-wrap"
+                className="cursor-pointer overflow-hidden relative"
+                style={{ height: '8rem' }} // 8rem = 128px, adjust as needed
               >
-                {example}
+                <div className="absolute inset-0 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+                  <pre className="whitespace-pre-wrap font-sans">{example}</pre>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-gray-700 to-transparent pointer-events-none"></div>
               </div>
             )}
           </li>
@@ -50,8 +53,7 @@ export default function ExamplesSection({ examples, addExample }) {
           value={newExample}
           onChange={(e) => setNewExample(e.target.value)}
           placeholder="Add a new example"
-          className="w-full p-2 border rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
-          rows="3"
+          className="w-full p-2 border rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 h-32 resize-none"
         />
         <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200 self-start">
           Add Example
