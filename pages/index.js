@@ -24,14 +24,14 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-900 text-gray-100">
       <Head>
         <title>AITemplater</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-12 text-blue-600">
+        <h1 className="text-4xl font-bold text-center mb-12 text-blue-400">
           AITemplater
         </h1>
         
