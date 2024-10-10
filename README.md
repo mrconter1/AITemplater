@@ -1,40 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AITemplater
+
+AITemplater is a web application designed to streamline the process of creating templates for multiple, similar tasks in GPT-based AI services like ChatGPT or Claude. It provides an intuitive interface for organizing reference examples, important information, and instructions, which can then be compiled into a reusable prompt template.
+
+## Features
+
+- **Example Management**: Add and edit multiple reference examples to guide AI responses for similar tasks.
+- **Info Bits**: Create structured information pieces that are relevant across multiple related prompts.
+- **Instruction Input**: Specify clear, reusable instructions for the AI model.
+- **Prompt Generation**: Automatically compile examples, info bits, and instructions into a formatted prompt template.
+- **One-Click Copy**: Easily copy the generated prompt template to your clipboard for use in ChatGPT, Claude, or other GPT-based services.
+
+## Use Case
+
+AITemplater is particularly useful when you need to perform several slightly similar tasks using GPT models. For instance:
+
+- Creating multiple product descriptions with a consistent style
+- Generating a series of social media posts with similar structures
+- Preparing a set of email templates for different but related scenarios
+
+By creating a template, you can ensure consistency across tasks while easily customizing specific details for each use.
+
+## Technologies Used
+
+- React.js
+- Next.js
+- Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+To run AITemplater locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/mrconter1/aitemplate.git
+   cd aitemplate
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+   ```
+   npm run dev
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
