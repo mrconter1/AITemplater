@@ -3,6 +3,7 @@ import { useState } from 'react'
 import ExamplesSection from './components/ExampleSection'
 import InfoBitsSection from './components/InfoBitsSection'
 import InstructionSection from './components/InstructionSection'
+import GeneratePromptButton from './components/GeneratePromptButton'
 
 export default function Home() {
   const [examples, setExamples] = useState([])
@@ -49,6 +50,12 @@ export default function Home() {
         <InstructionSection 
           instruction={instruction}
           onInstructionChange={setInstruction}
+        />
+
+        <GeneratePromptButton 
+          examples={examples}
+          infoBits={infoBits}
+          instruction={instruction}
         />
       </main>
     </div>
